@@ -1,0 +1,100 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:antiquewhite;
+}
+h1{
+    text-align: center;
+}
+
+#p1Title{
+
+    text-align: center;
+    color: black;
+    background-color:hotpink;
+    box-sizing: border-box;
+    width: 100px;
+    border: 3px solid black;    
+    font-weight: bold;
+    position: relative;
+}
+
+#p2Title{
+
+    text-align: center;
+    color: white;
+    background-color:crimson;
+    box-sizing: border-box;
+    width: 100px;
+    border: 3px solid black;    
+    font-weight: bold;
+    position: relative;
+}
+
+#p3Title{
+
+    text-align: center;
+    color: black;
+    background-color:darkkhaki;
+    box-sizing: border-box;
+    width: 100px;
+    border: 3px solid black;    
+    font-weight: bold;
+    position: relative;
+}
+
+.cuadro{
+
+    border:3px solid black;
+    background-color:darkgray;
+    margin: 1.5%;
+}
+
+/********** Large devices  **********/
+
+@media (min-width: 992px) {
+  
+    .cuadro{
+
+        position: relative;
+        width: 30%;
+        float: left;
+        padding: 10px;
+        margin: 1.5%;
+        text-align: justify;
+    }
+
+    #p1Title, #p2Title, #p3Title{
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0%;
+        border: 0px;
+    }
+}
+
+/********** Medium devices  **********/
+
+@media (min-width: 778px) and (max-width: 991px) {
+
+    #cuadro1, #cuadro2{
+
+        position: relative;
+        width: 47%;
+        float: left;
+        padding: 10px;
+        text-align: justify;
+        margin: 1.5%;
+    }
+
+    #cuadro3
+    {
+        clear: both;
+        margin: 1.5%;
+    }
+    
+}
